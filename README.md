@@ -14,7 +14,3 @@ The **fujm Gmail Preview Tool** extension allows users to generate and insert a 
 3. **Generate Preview**: Click on the extension icon, paste the URL you want to preview, and click "Generate Preview."
 4. **View Preview**: The preview will be inserted directly into your email, showing the content of the linked page.
 
-## Installation
-1. Clone this repository to your local machine.
-   ```bash
-   git clone https://github.com/yourusername/fujm-gmail-preview-tool.git
