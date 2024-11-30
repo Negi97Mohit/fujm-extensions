@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "fujm - Gmail Preview Tool Extension",
+  "version": "1.0",
+  "description": "Generates and inserts a scrollable or interactive URL preview into Gmail emails.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/m1.png",
+      "48": "icons/m1.png",
+      "128": "icons/m1.png"
+    }
+  },
+  "icons": {
+    "16": "icons/m1.png",
+    "48": "icons/m1.png",
+    "128": "icons/m1.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
